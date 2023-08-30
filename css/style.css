@@ -1702,7 +1702,29 @@ width: 89%;
 	}	
 }
 
+.logo {
+	width: 153px;
+}
+
 @media (max-width: 767px) {
+	.navbar-default .navbar-brand {
+		height: 80px;
+	}
+	.logo {
+		width: 100px;
+	}
+	a.navbar-brand:before {
+    content: '';
+    z-index: 99;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-top: 24px solid #81c402;
+    left: 0;
+    bottom: -24px;
+}
 .navbar-default .navbar-collapse {
   border-color: none;
   background: #f99947;
