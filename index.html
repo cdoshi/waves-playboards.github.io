@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Waves - Playboards For Lil Explorers</title>
+<title>Waves Playboards</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="playbaords, busyboards" />
 <!-- css -->
@@ -10,7 +11,6 @@
 <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link href="css/jcarousel.css" rel="stylesheet" />
 <link href="css/flexslider.css" rel="stylesheet" />
-<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" />
  
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -26,7 +26,7 @@
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-Bistro=".navbar-collapse">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -35,12 +35,16 @@
                         <img src="img/logo.png" alt="waves logo" style="width:153px;" />
                     </a>
                 </div>
-                <div class="navbar-collapse collapse ">
+                <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-						<li><a href="#aboutus">About Us</a></li>
                         <li><a href="#benefits">Benefits</a></li>
                         <li><a href="#sizes">Sizes</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#aboutus">About Us</a></li>
+                        <li><a class="btn btn-success btn-lg" href="https://wa.me/919819436654" data-placement="top" title="WhatsApp" target="_blank" style="color: white;">
+                            Order now
+                            <i class="fa-brands fa-whatsapp fa-xl"></i>
+                        </a></li>
                     </ul>
                 </div>
             </div>
@@ -48,28 +52,49 @@
 	</header>
 	<!-- end header -->
 	<section id="banner">
-	 
 	<!-- Slider -->
         <div id="main-slider" class="flexslider">
             <ul class="slides">
-              <li>
-                <div class="carousel-image" style="background-image:url('img/slides/1.jpg');
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;"></div>
-                <div class="flex-caption container">
-                    <h3>Tast of Goodness</h3> 
-					<p>Doloribus omnis minus temporibus perferendis ipsa</p>  
-                </div>
-              </li>
+                <li>
+                    <div class="carousel-image" style="background-image:url('img/slides/1.jpg');
+                    background-position: top;
+                    background-size: cover;
+                    background-repeat: no-repeat;">
+                    </div>
+                </li>
               <li>
                 <div class="carousel-image" style="background-image:url('img/slides/2.jpg');
                 background-position: center;
                 background-size: cover;
-                background-repeat: no-repeat;"></div>
-                <div class="flex-caption container">
-                    <h3>Tast of Goodness</h3> 
-					<p>Doloribus omnis minus temporibus perferendis ipsa</p>  
+                background-repeat: no-repeat;">
+                </div>
+              </li>
+              <li>
+                <div class="carousel-image" style="background-image:url('img/slides/3.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;">
+                </div>
+              </li>
+              <li>
+                <div class="carousel-image" style="background-image:url('img/slides/4.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;">
+                </div>
+              </li>
+              <li>
+                <div class="carousel-image" style="background-image:url('img/slides/5.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;">
+                </div>
+              </li>
+              <li>
+                <div class="carousel-image" style="background-image:url('img/slides/6.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;">
                 </div>
               </li>
             </ul>
@@ -77,141 +102,23 @@
 	<!-- end slider -->
 	</section>
 
-    <section id="sizes">
-	    <div class="container">
-	        <div class="row">
-			    <div class="col-md-12">
-				    <div class="aligncenter">
-                        <h2 class="aligncenter">Sizes</h2>
-				    <br>
-			    </div>
-		    </div>
-	        <div class="row">
-                <div class="col-md-6">
-                    <div class="post3">
-                        <div style="background-image:url('img/mini_1.jpg');height: 300px;
-                        background-position: center;
-                        background-size: contain;
-                        background-repeat: no-repeat;"></div>
-                    </div>
-                    <div style="text-align: center;">
-                        <h3>Mini</h3>
-                        <p>12in x 12in</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="post3">
-                        <div style="background-image:url('img/small_1.jpg');height: 300px;
-                        background-position: center;
-                        background-size: contain;
-                        background-repeat: no-repeat;"></div>
-                    </div>
-                    <div style="text-align: center;">
-                        <h3>Small</h3>
-                        <p>24in (L) x 15in (H)</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="post3">
-                        <div style="background-image:url('img/big.jpg');height: 300px;
-                        background-position: center;
-                        background-size: contain;
-                        background-repeat: no-repeat;"></div>
-                    </div>
-                    <div style="text-align: center;">
-                        <h3>Big</h3>
-                        <p>30in (L) x 24in (H)</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="post3">
-                        <div style="background-image:url('img/wall_mounted.jpg');height: 300px;
-                        background-position: center;
-                        background-size: contain;
-                        background-repeat: no-repeat;"></div>
-                    </div>
-                    <div style="text-align: center;">
-                        <h3>Wall Mounted</h3>
-                        <p>
-                            3ft (L) x 2ft (H) <br />
-                            4ft (L) x 2ft (H) <br />
-                            5ft (L) x 2ft (H) <br />
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="post3">
-                        <div style="background-image:url('img/custom.jpg');height: 300px;
-                        background-position: center;
-                        background-size: contain;
-                        background-repeat: no-repeat;"></div>
-                    </div>
-                    <div style="text-align: center;">
-                        <h3>Shaped playboards (customized shapes possible)</h3>
-                    </div>
-                </div>
-                
-
-            </div>
-	    </div>
-	</section>
-
-    <section id="testimonials">
-	    <div class="container">
-	        <div class="row">
-			    <div class="col-md-12">
-				    <div class="aligncenter">
-                        <h2 class="aligncenter">Testimonials</h2>
-				    <br>
-			    </div>
-		    </div>
-	        <div class="row">
-                <div class="col-md-3">
-                    <div class="post3">
-                        <img src="img/testimonial_1.png" alt="testimonial" style="height: 350px;width: auto;" />
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="post3">
-                        <img src="img/testimonial_2.jpg" alt="testimonial" style="height: 350px;width: auto;" />
-                    </div>
-                </div>
-            </div>
-	    </div>
-	</section>
-
-    <section id="aboutus">
-        <div class="caption">
-            <h3>About Us</h3> 
-            <p>
-                Waves was started in 2018 with the simple idea of 
-                enhancing a child's fine motors, 
-                hand eye coordination, 
-                pincer pencil grip, bilateral coordination, 
-                gross motors through play. Designing these 
-                as per the child's age was the most important 
-                factor as each child is different and their 
-                developmental milestones differ too.
+    <section id="whatareplayboards" class="info-section">
+        <div class="caption" style="background-color: #8fceff;">
+            <h3>What is a playboard/busyboard?</h3> 
+            <p style="font-size: medium;">
+                A customized playboard turns into a play-buddy as the child explores and interacts with it comfortably. Select the objects to be added from a variety of components like latches, zippers, buttons, switches, knobs, wheels, mirrors, bells, and more. The uniqueness of the objects and a variety of components give access to children to manipulate, touch, and explore.
+                <br /><br />
+                A playboard is suitable for personal use or institutions with toddlers presence like preschools, schools, indoor play areas, pediatric centers, etc.
             </p>
         </div>
     </section>
 
-	<section class="txt-area">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="aligncenter">
-                    <h1 class="aligncenter">Benefits</h1>
-                </div>
-			</div>
-		</div>
-	</div>
-	</section>
-	
-	
-	<section id="benefits">
-	<div class="container">
-		<div class="row">
+    <section id="benefits" class="section">
+        <h2 class="aligncenter section-title" style="background-color: #9df19d;">
+            Benefits
+        </h2>
+        <div class="container">
+		    <div class="row">
                 <div class="features">
                     <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="0ms" style="visibility: visible; -webkit-animation-duration: 300ms; -webkit-animation-delay: 0ms;">
                         <div class="media service-box">
@@ -321,20 +228,186 @@
 	    </div>
 	</section>
 
-    <section id="whatareplayboards">
-        <div class="caption">
-            <h3>What is a playboard/busyboard?</h3> 
-            <p>
-                A playboard/busyboard is a safe play area for the child 
-                to explore the unusual objects on it. The uniqueness of 
-                the objects help fulfill the child's curiosity for it.
-                Moreover a child's excess energy is channelized while 
-                playing with the objects. A customized playboard turns 
-                into your child's play-buddy at home as the child explores 
-                and interacts with it comfortably. The board features a 
-                variety of components that children can manipulate, touch, 
-                and explore, such as locks, latches, zippers, buttons, 
-                switches, knobs, wheels, mirrors, bells, and more.
+    <section id="sizes" class="section">
+        <h2 class="aligncenter section-title" style="background-color: #ffff86;">
+            Sizes
+        </h2>
+	    <div class="container">
+	        <div class="row">
+                <div class="col-md-4">
+                    <div class="post3">
+                        <div style="background-image:url('img/mini_1.jpg');height: 300px;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;"></div>
+                    </div>
+                    <div style="text-align: center; margin: 10px;">
+                        <h4 style="margin:0;margin-top:10px">Mini (Portable/Wall Mounted)</h4>
+                        <div style="margin-left:43%;text-align: left;">
+                            <i class="fa-solid fa-right-long"></i>
+                            <span>12" x 12"</span>
+                            <br />
+                            <i class="fa-solid fa-right-long"></i>
+                            <span>7 to 10 objects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="post3">
+                        <div style="background-image:url('img/small_1.jpg');height: 300px;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;"></div>
+                    </div>
+                    <div style="text-align: center; margin: 10px;">
+                        <h4 style="margin:0;margin-top:10px">Small (Portable/Wall Mounted)</h4>
+                        <div style="margin-left:40%;text-align: left;">
+                            <i class="fa-solid fa-right-long"></i>
+                            <span>24" (L) x 15" (H)</span>
+                            <br />
+                            <i class="fa-solid fa-right-long"></i>
+                            <span>12 to 16 objects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="post3">
+                        <div style="background-image:url('img/big.jpg');height: 300px;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;"></div>
+                    </div>
+                    <div style="text-align: center; margin: 10px;">
+                        <h4 style="margin:0;margin-top:10px">Big (Portable/Wall Mounted)</h4>
+                        <div style="margin-left:40%;text-align: left;">
+                            <i class="fa-solid fa-right-long"></i>
+                            <span>30" (L) x 24" (H)</span>
+                            <br />
+                            <i class="fa-solid fa-right-long"></i>
+                            <span>17 to 20 objects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="post3">
+                        <div style="background-image:url('img/3by2.jpg');height: 300px;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;"></div>
+                    </div>
+                    <div style="text-align: center; margin: 10px;">
+                        <h4 style="margin:0;margin-top:10px">3ft (L) x 2ft (H) (Wall Mounted)</h4>
+                        <div style="margin-left:43%;text-align: left;">
+                            <i class="fa-solid fa-right-long"></i>
+                            <span>20+ objects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="post3">
+                        <div style="background-image:url('img/4by2.jpg');height: 300px;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;"></div>
+                    </div>
+                    <div style="text-align: center; margin: 10px;">
+                        <h4 style="margin:0;margin-top:10px">4ft (L) x 2ft (H) (Wall Mounted)</h4>
+                        <div style="margin-left:43%;text-align: left;">
+                            <i class="fa-solid fa-right-long"></i>
+                            <span>20+ objects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="post3">
+                        <div style="background-image:url('img/5by2.jpg');height: 300px;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;"></div>
+                    </div>
+                    <div style="text-align: center; margin: 10px;">
+                        <h4 style="margin:0;margin-top:10px">5ft (L) x 2ft (H) (Wall Mounted)</h4>
+                        <div style="margin-left:43%;text-align: left;">
+                            <i class="fa-solid fa-right-long"></i>
+                            <span>20+ objects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="post3">
+                        <div style="background-image:url('img/truck.jpg');height: 300px;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;"></div>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4>Truck Shaped Playboard (customized shapes possible)</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="post3">
+                        <div style="background-image:url('img/teddy.jpg');height: 300px;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;"></div>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4>Teddy Shaped Playboard (customized shapes possible)</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="post3">
+                        <div style="background-image:url('img/ship.jpg');height: 300px;
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;"></div>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4>Ship Shaped Playboard (customized shapes possible)</h4>
+                    </div>
+                </div>
+            </div>
+	    </div>
+	</section>
+
+    <section id="testimonials" class="section">
+        <h2 class="aligncenter section-title" style="background-color: #b3b3ff;">
+            Testimonials
+        </h2>
+	    <div class="container">
+	        <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="post3">
+                        <img src="img/testimonial_1.png" alt="testimonial" class="testimonial-style" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post3">
+                        <img src="img/testimonial_2.jpg" alt="testimonial" class="testimonial-style" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post3">
+                        <img src="img/testimonial_3.jpg" alt="testimonial" class="testimonial-style" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post3">
+                        <img src="img/testimonial_4.jpg" alt="testimonial" class="testimonial-style" />
+                    </div>
+                </div>
+            </div>
+	    </div>
+	</section>
+
+    <section id="aboutus" class="info-section">
+        <div class="caption" style="background-color: #ffbaba;">
+            <h3>About Us</h3> 
+            <p style="font-size: medium;">
+                Waves playboard is a homegrown company in Mumbai, customising playboards for toddlers of 8 months to 5 years since 2018. The idea of customising these for little ones is to enhance pincer grip while they are simply playing. 
+                We have shipped these across India for personal use, pre-schools, schools, etc.
+                <br />
+                Our global clients connect with us before their visit to India.
             </p>
         </div>
     </section>
@@ -347,9 +420,9 @@
 					<h3 class="widgetheading">Contact Us</h3>
 					<p>
                         <ul class="social-network">
-                            <li><a href="https://www.facebook.com/wavesplayboards" data-placement="top" title="Facebook" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
-                            <li><a href="https://www.instagram.com/waves_playboards/" data-placement="top" title="Instagram" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
                             <li><a href="https://wa.me/919819436654" data-placement="top" title="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a></li>
+                            <li><a href="https://www.instagram.com/waves_playboards/" data-placement="top" title="Instagram" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                            <li><a href="https://www.facebook.com/wavesplayboards" data-placement="top" title="Facebook" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
                             <li><a href="mailto:playboardsbywaves@gmail.com" data-placement="top" title="Email" target="_blank"><i class="fa-solid fa-envelope fa-xl"></i></a></li>
                         </ul>
 					</p>
@@ -373,6 +446,5 @@
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
-<script src="js/owl-carousel/owl.carousel.js"></script>
 </body>
 </html>
