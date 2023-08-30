@@ -1706,7 +1706,22 @@ width: 89%;
 	width: 153px;
 }
 
+.order-btn-sm {
+	display: none;
+}
+
+.order-btn-lg {
+	display: block;
+}
+
 @media (max-width: 767px) {
+	.order-btn-sm {
+		margin-top: 7px;
+		display: block;
+	}
+	.order-btn-lg {
+		display: none;
+	}
 	.navbar-default .navbar-brand {
 		height: 80px;
 	}
