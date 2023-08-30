@@ -1721,9 +1721,9 @@ width: 89%;
     height: 0;
     border-left: 65px solid transparent;
     border-right: 65px solid transparent;
-    border-top: 24px solid #81c402;
+    border-top: 26px solid #81c402;
     left: 0;
-    bottom: -24px;
+    bottom: -26px;
 }
 .navbar-default .navbar-collapse {
   border-color: none;
