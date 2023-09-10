@@ -272,27 +272,25 @@ header .nav li .dropdown-menu li a {
 /* --- menu --- */
 
 header .navigation {
-	float:right;
+	float: right;
 }
 
 header ul.nav li {
-	border:none;
-	margin:0;
+	border: none;
+	margin: 0;
 }
 
 header ul.nav li a {	
-	font-size: 14px;
+	font-size: 18px;
 	border:none;
 	font-weight: 400;
-	text-transform:uppercase;
 	text-align: right;
 }
 
 header ul.nav li ul li a {	
-	font-size:12px;
-	border:none;
-	font-weight:300;
-	text-transform:uppercase;
+	font-size: 12px;
+	border: none;
+	font-weight: 300;
 }
 
 
@@ -1342,19 +1340,19 @@ footer .widget .flickr_badge img {
 footer {
 	padding-bottom:25px;
 	color:#f8f8f8;
-	background: #2D2D2D;
+	background: #8fceff;
 }
 
 footer a {
-	color:#fff;
+	color: black;
 }
 
 footer a:hover {
-	color:#eee;
+	color: #464646;
 }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
-	color:#fff;
+	color: black;
 }
 
 footer address {
