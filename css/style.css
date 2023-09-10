@@ -29,7 +29,7 @@ body {
 
 .carousel-image {
 	height: 500px;
-	background-position: top;
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -1672,30 +1672,28 @@ width: 89%;
 
 @media (min-width: 768px) and (max-width: 979px) {
 
-	a.detail{
+	a.detail {
 		background:none;
 		width:100%;
 	}
 
-
-	
 	footer .widget form  input#appendedInputButton {
-		  display: block;
-		  width: 91%;
-		  -webkit-border-radius: 4px 4px 4px 4px;
-			 -moz-border-radius: 4px 4px 4px 4px;
-				  border-radius: 4px 4px 4px 4px;
+		display: block;
+		width: 91%;
+		-webkit-border-radius: 4px 4px 4px 4px;
+		-moz-border-radius: 4px 4px 4px 4px;
+		border-radius: 4px 4px 4px 4px;
 	}
 	
 	footer .widget form  .input-append .btn {
-		  display: block;
-		  width: 100%;
-		  padding-right: 0;
-		  padding-left: 0;
-		  -webkit-box-sizing: border-box;
-			 -moz-box-sizing: border-box;
-				  box-sizing: border-box;
-				  margin-top:10px;
+		display: block;
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		margin-top:10px;
 	}
 
 	ul.related-folio li{
@@ -1767,30 +1765,34 @@ margin-top: 15px;
   border: 0;
   border-radius: 0;
 }
-  body {
-    padding-right: 0;
-    padding-left: 0;
-  }
-	.navbar-brand {
-		margin-top: 10px;
-		border-bottom: none;
-	}
-	.navbar-header {
-		border-bottom: none;
-	}
-	
-	.navbar-nav {
-		border-top: none;
-		float: none;
-		width: 100%;
-	}
+
+body {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.navbar-brand {
+	margin-top: 10px;
+	border-bottom: none;
+}
+
+.navbar-header {
+	border-bottom: none;
+}
+
+.navbar-nav {
+	border-top: none;
+	float: none;
+	width: 100%;
+}
+
 .navbar .nav > li > a { 
-color:#fff;
+	color:#fff;
 }
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover {
-background: none;
-font-weight: 700;
-color: #FFFFFF;
+	background: none;
+	font-weight: 700;
+	color: #FFFFFF;
 }
 	header .navbar-nav > li {
 padding-bottom: 2px;
