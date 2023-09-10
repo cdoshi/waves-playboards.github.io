@@ -29,6 +29,9 @@ body {
 
 .carousel-image {
 	height: 500px;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .section-title {
@@ -173,10 +176,7 @@ header .navbar-collapse  ul.navbar-nav {
     float: right;
     margin-right: 0;
 }
-header .navbar {
-min-height: 70px;
-background: #fff;
-}
+
 .home-page header .navbar-default{
     background: rgba(255, 255, 255, 1);	
     /* position: absolute; */
@@ -208,11 +208,6 @@ header .navbar-default .navbar-nav > .open > a:focus {
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-}
-
-
-header .navbar {
-    min-height: 70px; 
 }
 
 header .navbar-nav > li  {
@@ -1781,7 +1776,6 @@ margin-top: 15px;
 		border-bottom: none;
 	}
 	.navbar-header {
-		margin-top: 20px;
 		border-bottom: none;
 	}
 	
