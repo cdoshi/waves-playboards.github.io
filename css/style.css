@@ -1920,40 +1920,18 @@ li.active {
 		font-size:14px;
 	}
 }
- 
-.logo-container {
-  overflow: hidden;
-  .slider {
-    animation: slidein 30s linear infinite;
-    white-space: nowrap;
-    .logos {
-      display: inline-block;
-      margin: 0px 0;
-      .fab {
-				height: auto;
-				width: 200px;
-				margin: 20px;
-        animation: fade-in 0.5s 
-          cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-      }
-    }
-  }
-}
 
-@keyframes slidein {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(-180%, 0, 0);
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.logos {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+	max-height: 500px;
+	overflow-y: auto;
+	> img {
+		align-self: center;
+		height: auto;
+		width: 200px;
+		margin: 20px;
+	}
 }
