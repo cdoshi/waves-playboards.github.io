@@ -80,6 +80,9 @@ body {
 	.carousel-image {
 		height: 300px;
 	}
+	.logos > img {
+		width: 100px !important;
+	}
 }
 a:active {
 	outline:0;
