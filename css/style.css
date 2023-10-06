@@ -76,6 +76,11 @@ body {
 	background-position-y: bottom;
 }
 
+.features .media.service-box {
+	display: flex;
+	align-items: center;
+}
+
 @media only screen and (max-width: 600px) {
 	.carousel-image {
 		height: 300px;
