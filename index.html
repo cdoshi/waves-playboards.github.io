@@ -7,10 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="playboards, busyboards, toys, activities, kids, gifting" />
 <!-- css -->
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-<link href="css/flexslider.css" rel="stylesheet" />
-<link href="css/style.css?v=4" rel="stylesheet" />
+<link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="css/fancybox/jquery.fancybox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="css/flexslider.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<link href="css/style.css?v=5" rel="stylesheet" />
+<noscript>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css">
+    <link href="css/flexslider.css" rel="stylesheet" />
+</noscript>
  
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -25,21 +30,29 @@
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button aria-label="navbar-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img src="img/logo.png" alt="waves logo" class="logo" />
+                        <img
+                            sizes="(max-width: 512px) 100px, 153px"
+                            srcset="
+                            https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696707687/waves_website/waves-logo.png 100w,
+                            https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_153/v1696707687/waves_website/waves-logo.png 153w"
+                            src="https://res.cloudinary.com/orkni/image/upload/v1696707687/waves_website/waves-logo.png"
+                            alt="waves playboards logo"
+                            class="logo"
+                        />
                     </a>
-                    <a style="float: right; margin-right: 10px;" class="btn btn-success order-btn-sm" href="https://wa.me/919819436654" data-placement="top" title="WhatsApp" target="_blank" style="color: white;">
+                    <a style="float: right; margin-right: 10px; background-color: #2A652A;" class="btn btn-success order-btn-sm" href="https://wa.me/919819436654" data-placement="top" title="WhatsApp" target="_blank" style="color: white;">
                         Order now
                         <i class="fa-brands fa-whatsapp fa-xl"></i>
                     </a>
                 </div>
                 <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
-                    <a style="float: right; margin-right: 10px;margin-top: 10px;" class="btn btn-success btn-lg order-btn-lg" href="https://wa.me/919819436654" data-placement="top" title="WhatsApp" target="_blank" style="color: white;">
+                    <a style="float: right; margin-right: 10px;margin-top: 10px; background-color: #2A652A;" class="btn btn-success btn-lg order-btn-lg" href="https://wa.me/919819436654" data-placement="top" title="WhatsApp" target="_blank" style="color: white;">
                         Order now
                         <i class="fa-brands fa-whatsapp fa-xl"></i>
                     </a>
@@ -61,27 +74,29 @@
         <div id="main-slider" class="flexslider">
             <ul class="slides">
                 <li>
-                    <div class="carousel-image" style="background-image:url('img/slides/1.jpg'); background-position: top;">
+                    <div
+                        class="carousel-image"
+                        style="background-image:url('https://res.cloudinary.com/orkni/image/upload/q_70/v1696708221/waves_website/slide-1.jpg'); background-position: top;">
                     </div>
                 </li>
                 <li>
-                    <div class="carousel-image" style="background-image:url('img/slides/2.jpg');">
+                    <div class="carousel-image" style="background-image:url('https://res.cloudinary.com/orkni/image/upload/q_70/v1696708330/waves_website/slide-2.jpg');">
                     </div>
                 </li>
                 <li>
-                    <div class="carousel-image" style="background-image:url('img/slides/3.jpg');">
+                    <div class="carousel-image" style="background-image:url('https://res.cloudinary.com/orkni/image/upload/q_70/v1696708371/waves_website/slide-3.jpg');">
                     </div>
                 </li>
                 <li>
-                    <div class="carousel-image" style="background-image:url('img/slides/4.jpg');">
+                    <div class="carousel-image" style="background-image:url('https://res.cloudinary.com/orkni/image/upload/q_70/v1696708417/waves_website/slide-4.jpg');">
                     </div>
                 </li>
                 <li>
-                    <div class="carousel-image" style="background-image:url('img/slides/5.jpg');">
+                    <div class="carousel-image" style="background-image:url('https://res.cloudinary.com/orkni/image/upload/q_70/v1696708446/waves_website/slide-5.jpg');">
                     </div>
                 </li>
                 <li>
-                    <div class="carousel-image" style="background-image:url('img/slides/6.jpg');">
+                    <div class="carousel-image" style="background-image:url('https://res.cloudinary.com/orkni/image/upload/q_70/v1696708471/waves_website/slide-6.jpg');">
                     </div>
                 </li>
             </ul>
@@ -105,12 +120,17 @@
             Benefits
         </h2>
         <div class="container">
-		    <div class="row">
+            <div class="row">
                 <div class="features">
                     <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="0ms" style="visibility: visible; -webkit-animation-duration: 300ms; -webkit-animation-delay: 0ms;">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <img src="img/eye-hand.png" alt="eye hand coordination" style="width: 75px" />
+                                <img
+                                    src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_75/v1696705385/waves_website/eye-hand.png"
+                                    alt="eye hand coordination"
+                                    style="width: 75px"
+                                    loading="lazy"
+                                />
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">
@@ -123,7 +143,12 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="100ms" style="visibility: visible; -webkit-animation-duration: 300ms; -webkit-animation-delay: 100ms;">
                         <div class="media service-box">
                             <div class="pull-left">
-                                 <img src="img/fine-gross-motor.png" alt="fine and gross motor skills" style="width: 75px" />
+                                <img
+                                    src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_75/v1696705609/waves_website/fine-gross-motor.png"
+                                    alt="fine and gross motor skills"
+                                    style="width: 75px"
+                                    loading="lazy"
+                                />
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">
@@ -136,7 +161,12 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="200ms" style="visibility: visible; -webkit-animation-duration: 300ms; -webkit-animation-delay: 200ms;">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <img src="img/pincer-pencil-grasp.png" alt="Pincer pencil grasp" style="width: 75px" />
+                                <img
+                                    src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_75/v1696705662/waves_website/pincer-pencil-grasp.png"
+                                    alt="Pincer pencil grasp"
+                                    style="width: 75px"
+                                    loading="lazy"
+                                />
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">
@@ -149,7 +179,12 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="300ms" style="visibility: visible; -webkit-animation-duration: 300ms; -webkit-animation-delay: 300ms;">
                         <div class="media service-box">
                             <div class="pull-left">
-                                 <img src="img/visual-perception.png" alt="Visual Perception" style="width: 75px" />
+                                <img
+                                    src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_75/v1696705719/waves_website/visual-perception.png"
+                                    alt="Visual Perception"
+                                    style="width: 75px"
+                                    loading="lazy"
+                                />
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">
@@ -162,7 +197,12 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="400ms" style="visibility: visible; -webkit-animation-duration: 300ms; -webkit-animation-delay: 400ms;">
                         <div class="media service-box">
                             <div class="pull-left">
-                                 <img src="img/bilateral-coordination.png" alt="Bilateral Coordination" style="width: 75px" />
+                                <img
+                                    src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_75/v1696705766/waves_website/bilateral-coordination.png"
+                                    alt="Bilateral Coordination"
+                                    style="width: 75px"
+                                    loading="lazy"
+                                />
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">
@@ -175,7 +215,12 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="500ms" style="visibility: visible; -webkit-animation-duration: 300ms; -webkit-animation-delay: 500ms;">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <img src="img/letters-and-numbers.png" alt="Math and English concept learning/revision" style="width: 75px"/>
+                                <img
+                                    src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_75/v1696705812/waves_website/letters-and-numbers.png"
+                                    alt="Math and English concept learning/revision"
+                                    style="width: 75px"
+                                    loading="lazy"
+                                />
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">
@@ -188,7 +233,12 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="500ms" style="visibility: visible; -webkit-animation-duration: 300ms; -webkit-animation-delay: 500ms;">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <img src="img/cognitive-skills.png" alt="Cognitive Skills" style="width: 75px"/>
+                                <img
+                                    src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_75/v1696705863/waves_website/cognitive-skills.png"
+                                    alt="Cognitive Skills"
+                                    style="width: 75px"
+                                    loading="lazy"
+                                />
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">
@@ -201,7 +251,12 @@
                     <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="500ms" style="visibility: visible; -webkit-animation-duration: 300ms; -webkit-animation-delay: 500ms;">
                         <div class="media service-box">
                             <div class="pull-left">
-                                <img src="img/cause-effect.png" alt="Cause Effect Relationship" style="width: 75px"/>
+                                <img
+                                    src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_75/v1696705906/waves_website/cause-effect.png"
+                                    alt="Cause Effect Relationship"
+                                    style="width: 75px"
+                                    loading="lazy"
+                                />
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">
@@ -223,7 +278,12 @@
 	        <div class="row">
                 <div class="col-md-4">
                     <div class="post3">
-                        <div class="size-image" style="background-image:url('img/mini_1.jpg');"></div>
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,h_200/v1696706217/waves_website/mini-playboard.jpg"
+                            alt="waves mini playboard"
+                            height="200px"
+                            loading="lazy"
+                        />
                     </div>
                     <div style="text-align: center; margin: 10px;">
                         <h4 style="margin:0;margin-top:10px">Mini (Portable/Wall Mounted)</h4>
@@ -243,7 +303,12 @@
                 </div>
                 <div class="col-md-4">
                     <div class="post3">
-                        <div class="size-image" style="background-image:url('img/small_1.jpg')"></div>
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,h_200/v1696706348/waves_website/small-playboard.jpg"
+                            alt="waves small playboard"
+                            height="200px"
+                            loading="lazy"
+                        />
                     </div>
                     <div style="text-align: center; margin: 10px;">
                         <h4 style="margin:0;margin-top:10px">Small (Portable/Wall Mounted)</h4>
@@ -260,7 +325,12 @@
                 </div>
                 <div class="col-md-4">
                     <div class="post3">
-                        <div class="size-image" style="background-image:url('img/big.jpg');"></div>
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,h_200/v1696706655/waves_website/big-playboard.jpg"
+                            alt="waves big playboard"
+                            height="200px"
+                            loading="lazy"
+                        />
                     </div>
                     <div style="text-align: center; margin: 10px;">
                         <h4 style="margin:0;margin-top:10px">Big (Portable/Wall Mounted)</h4>
@@ -275,7 +345,12 @@
                 </div>
                 <div class="col-md-4">
                     <div class="post3">
-                        <div class="size-image" style="background-image:url('img/3by2.jpg');"></div>
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,h_200/v1696706733/waves_website/3by2-playboard.jpg"
+                            alt="waves 3 by 2 playboard"
+                            height="200px"
+                            loading="lazy"
+                        />
                     </div>
                     <div style="text-align: center; margin: 10px;">
                         <h4 style="margin:0;margin-top:10px">3ft (Length) x 2ft (Height) (Wall Mounted)</h4>
@@ -287,7 +362,12 @@
                 </div>
                 <div class="col-md-4">
                     <div class="post3">
-                        <div class="size-image" style="background-image:url('img/4by2.jpg');"></div>
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,h_200/v1696706866/waves_website/4by2-playboard.jpg"
+                            alt="waves 4 by 2 playboard"
+                            height="200px"
+                            loading="lazy"
+                        />
                     </div>
                     <div style="text-align: center; margin: 10px;">
                         <h4 style="margin:0;margin-top:10px">4ft (Length) x 2ft (Height) (Wall Mounted)</h4>
@@ -299,7 +379,12 @@
                 </div>
                 <div class="col-md-4">
                     <div class="post3">
-                        <div class="size-image" style="background-image:url('img/5by2.jpg');"></div>
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,h_200/v1696706910/waves_website/5by2-playboard.jpg"
+                            alt="waves 5 by 2 playboard"
+                            height="200px"
+                            loading="lazy"
+                        />
                     </div>
                     <div style="text-align: center; margin: 10px;">
                         <h4 style="margin:0;margin-top:10px">5ft (Length) x 2ft (Height) (Wall Mounted)</h4>
@@ -311,7 +396,12 @@
                 </div>
                 <div class="col-md-4">
                     <div class="post3">
-                        <div class="size-image" style="background-image:url('img/truck.jpg');"></div>
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,h_200/v1696706976/waves_website/truck-playboard.jpg"
+                            alt="waves truck playboard"
+                            height="200px"
+                            loading="lazy"
+                        />
                     </div>
                     <div style="text-align: center;">
                         <h4>Truck Shaped Playboard (customized shapes possible)</h4>
@@ -319,7 +409,12 @@
                 </div>
                 <div class="col-md-4">
                     <div class="post3">
-                        <div class="size-image" style="background-image:url('img/teddy.jpg');"></div>
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,h_200/v1696707028/waves_website/teddy-playboard.jpg"
+                            alt="waves teddy playboard"
+                            height="200px"
+                            loading="lazy"
+                        />
                     </div>
                     <div style="text-align: center;">
                         <h4>Teddy Shaped Playboard (customized shapes possible)</h4>
@@ -327,7 +422,12 @@
                 </div>
                 <div class="col-md-4">
                     <div class="post3">
-                        <div class="size-image" style="background-image:url('img/ship.jpg');"></div>
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,h_200/v1696707071/waves_website/ship-playboard.jpg"
+                            alt="waves ship playboard"
+                            height="200px"
+                            loading="lazy"
+                        />
                     </div>
                     <div style="text-align: center;">
                         <h4>Ship Shaped Playboard (customized shapes possible)</h4>
@@ -345,22 +445,50 @@
 	        <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="post3">
-                        <img src="img/testimonial_1.jpg" alt="testimonial" class="testimonial-style" />
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_400/v1696707381/waves_website/waves-testimonial-1.jpg"
+                            alt="waves playboards testimonial"
+                            class="testimonial-style"
+                            width="400"
+                            height="auto"
+                            loading="lazy"
+                        />
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="post3">
-                        <img src="img/testimonial_2.jpg" alt="testimonial" class="testimonial-style" />
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_400/v1696707457/waves_website/waves-testimonial-2.jpg"
+                            alt="waves playboards testimonial"
+                            class="testimonial-style"
+                            width="400"
+                            height="auto"
+                            loading="lazy"
+                        />
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="post3">
-                        <img src="img/testimonial_3.jpg" alt="testimonial" class="testimonial-style" />
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_400/v1696707526/waves_website/waves-testimonial-3.jpg"
+                            alt="waves playboards testimonial"
+                            class="testimonial-style"
+                            width="400"
+                            height="auto"
+                            loading="lazy"
+                        />
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="post3">
-                        <img src="img/testimonial_4.jpg" alt="testimonial" class="testimonial-style" />
+                        <img
+                            src="https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_400/v1696707584/waves_website/waves-testimonial-4.jpg"
+                            alt="waves playboards testimonial"
+                            class="testimonial-style"
+                            width="400"
+                            height="auto"
+                            loading="lazy"
+                        />
                     </div>
                 </div>
             </div>
@@ -373,19 +501,123 @@
         </h2>
 	    <div class="container logo-container">
             <div class="logos">
-                <img src="img/logos/logo-1.png" alt="active mind educational toys logo" />
-                <img src="img/logos/logo-2.png" alt="ahuja constructions logo" />
-                <img src="img/logos/logo-3.png" alt="edify world school logo" />
-                <img src="img/logos/logo-4.png" alt="the learning tree logo" />
-                <img src="img/logos/logo-5.png" alt="lourdes english high school logo" />
-                <img src="img/logos/logo-6.png" alt="the mango tree logo" />
-                <img src="img/logos/logo-7.png" alt="pehel child development center logo" />
-                <img src="img/logos/logo-8.png" alt="my happy place logo" />
-                <img src="img/logos/logo-9.png" alt="b.d.somani international logo" />
-                <img src="img/logos/logo-10.png" alt="bvk lets play logo" />
-                <img src="img/logos/logo-11.png" alt="the growing trees logo" />
-                <img src="img/logos/logo-12.jpg" alt="small wonders logo logo" />
-                <img src="img/logos/logo-13.png" alt="kids corner playground and nursery logo" />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696700936/waves_website/active-minds-logo.png 100w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696700936/waves_website/active-minds-logo.png 200w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696700936/waves_website/active-minds-logo.png"
+                    alt="active mind educational toys logo"
+                    loading="lazy"
+                />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696702417/waves_website/ahuja-constructions-logo.png 100w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696702417/waves_website/ahuja-constructions-logo.png 200w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696702417/waves_website/ahuja-constructions-logo.png"
+                    alt="ahuja constructions logo"
+                    loading="lazy"
+                />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696702569/waves_website/edify-school-logo.png 100w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696702569/waves_website/edify-school-logo.png 200w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696702569/waves_website/edify-school-logo.png"
+                    alt="edify world school logo"
+                    loading="lazy"
+                />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696702680/waves_website/learning-tree-logo.png 100w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696702680/waves_website/learning-tree-logo.png 200w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696702680/waves_website/learning-tree-logo.png"
+                    alt="the learning tree logo"
+                    loading="lazy"
+                />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696702883/waves_website/lourdes-school-logo.png 100w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696702883/waves_website/lourdes-school-logo.png 200w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696702883/waves_website/lourdes-school-logo.png"
+                    alt="lourdes english high school logo"
+                    loading="lazy"
+                />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696702966/waves_website/mango-tree-logo.png 100w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696702966/waves_website/mango-tree-logo.png 200w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696702966/waves_website/mango-tree-logo.png"
+                    alt="the mango tree logo"
+                    loading="lazy"
+                />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696700357/waves_website/pehel-logo.png 256w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696700357/waves_website/pehel-logo.png 512w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696700357/waves_website/pehel-logo.png"
+                    alt="pehel child development center logo"
+                    loading="lazy"
+                />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696703040/waves_website/my-happy-place-logo.png 100w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696703040/waves_website/my-happy-place-logo.png 200w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696703040/waves_website/my-happy-place-logo.png"
+                    alt="my happy place logo"
+                    loading="lazy"
+                />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696703102/waves_website/bd-somani-logo.png 100w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696703102/waves_website/bd-somani-logo.png 200w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696703102/waves_website/bd-somani-logo.png"
+                    alt="b.d.somani international logo"
+                    loading="lazy"
+                />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696703188/waves_website/bvk-logo.png 100w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696703188/waves_website/bvk-logo.png 200w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696703188/waves_website/bvk-logo.png"
+                    alt="bvk lets play logo"
+                    loading="lazy"
+                />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696703248/waves_website/growing-trees-logo.png 100w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696703248/waves_website/growing-trees-logo.png 200w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696703248/waves_website/growing-trees-logo.png"
+                    alt="the growing trees logo"
+                    loading="lazy"
+                />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696703314/waves_website/small-wonders.jpg 100w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696703314/waves_website/small-wonders.jpg 200w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696703314/waves_website/small-wonders.jpg"
+                    alt="small wonders logo"
+                    loading="lazy"
+                />
+                <img
+                    sizes="(max-width: 512px) 50px, 100px"
+                    srcset="
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_50,w_100/v1696703372/waves_website/kids-corner.png 100w,
+                    https://res.cloudinary.com/orkni/image/upload/f_auto,q_70,w_200/v1696703372/waves_website/kids-corner.png 200w"
+                    src="https://res.cloudinary.com/orkni/image/upload/v1696703372/waves_website/kids-corner.png"
+                    alt="kids corner playground and nursery logo"
+                    loading="lazy"
+                />
             </div>
 	    </div>
 	</section>
@@ -410,10 +642,26 @@
 					<h3 class="widgetheading">Contact Us</h3>
 					<p>
                         <ul class="social-network">
-                            <li><a href="https://wa.me/919819436654" data-placement="top" title="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a></li>
-                            <li><a href="https://www.instagram.com/waves_playboards/" data-placement="top" title="Instagram" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
-                            <li><a href="https://www.facebook.com/wavesplayboards" data-placement="top" title="Facebook" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
-                            <li><a href="mailto:playboardsbywaves@gmail.com" data-placement="top" title="Email" target="_blank"><i class="fa-solid fa-envelope fa-xl"></i></a></li>
+                            <li>
+                                <a aria-label="WhatsApp Icon" href="https://wa.me/919819436654" data-placement="top" title="WhatsApp" target="_blank">
+                                    <i class="fa-brands fa-whatsapp fa-xl"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a aria-label="Instagram Icon" href="https://www.instagram.com/waves_playboards/" data-placement="top" title="Instagram" target="_blank">
+                                    <i class="fa-brands fa-instagram fa-xl"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a aria-label="Facebook Icon" href="https://www.facebook.com/wavesplayboards" data-placement="top" title="Facebook" target="_blank">
+                                    <i class="fa-brands fa-facebook fa-xl"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a aria-label="Email Icon" href="mailto:playboardsbywaves@gmail.com" data-placement="top" title="Email" target="_blank">
+                                    <i class="fa-solid fa-envelope fa-xl"></i>
+                                </a>
+                            </li>
                         </ul>
 					</p>
 				</div>
@@ -422,7 +670,7 @@
 	</div>
 	</footer>
 </div>
-<a href="#" class="scrollup"><i class="fa-solid fa-angle-up active"></i></a>
+<a href="#" class="scrollup" aria-label="scroll up button"><i class="fa-solid fa-angle-up active"></i></a>
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->

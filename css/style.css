@@ -7,16 +7,17 @@ Licence under Creative Commons Attribution 3.0
 @import url('fontawesome.min.css');  
 @import url('brands.min.css');
 @import url('solid.min.css');
-@import url('animate.css');
 
 @font-face {
 	font-family: "CustomFont";
 	src: url("../webfonts/Urbanist-Regular.ttf");
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "CustomFontBold";
 	src: url("../webfonts/Urbanist-Bold.ttf");
+	font-display: swap;
 }
 
 body {
@@ -377,7 +378,6 @@ display: inline-block;
 	position:relative;
 	margin:0;
 	padding:0;
-	background: url('../img/border-bg.jpg') top left repeat-x;
 	/* padding-top: 12px; */
 }
 
@@ -713,7 +713,7 @@ ul.breadcrumb li a:hover {
 .post3 {
 	text-align: center;
 }
-img{width: 100%;}
+
 .post3 img {
 margin-bottom: 20px;
 max-width: 100%;
