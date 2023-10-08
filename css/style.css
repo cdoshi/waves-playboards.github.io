@@ -4,19 +4,15 @@ Note:
 Licence under Creative Commons Attribution 3.0  
 -------------------------------------------------------*/
 
-@import url('fontawesome.min.css');  
-@import url('brands.min.css');
-@import url('solid.min.css');
-
 @font-face {
 	font-family: "CustomFont";
-	src: url("../webfonts/Urbanist-Regular.ttf");
+	src: url("https://res.cloudinary.com/orkni/raw/upload/v1696749805/waves_website/fonts/Urbanist-Regular.ttf");
 	font-display: swap;
 }
 
 @font-face {
 	font-family: "CustomFontBold";
-	src: url("../webfonts/Urbanist-Bold.ttf");
+	src: url("https://res.cloudinary.com/orkni/raw/upload/v1696749899/waves_website/fonts/Urbanist-Bold.ttf");
 	font-display: swap;
 }
 
