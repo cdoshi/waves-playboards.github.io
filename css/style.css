@@ -129,14 +129,23 @@ margin-bottom:15px;
 	position:relative;
 }
 
-#wrapper{
+#wrapper {
 	width:100%;
 	margin:0;	
 	padding:0;
 }
 
-.row .row,.row-fluid .row-fluid{
-	margin-bottom:30px;
+.playboard-info {
+	padding-bottom: 10px;
+}
+
+.playboard-info .arrow-style {
+	text-align: right;
+	padding-right: 50px;
+}
+
+.playboard-info .info {
+	margin-left: -50px;
 }
 
 .row.nomargin,.row-fluid.nomargin {
@@ -170,7 +179,7 @@ header .navbar {
     margin-top: 9px;
     padding: 0 0 0 15px;
 }
-.navbar-default .navbar-brand{
+.navbar-default .navbar-brand {
 color: #D81265;
 background: #81c402;
 height: 114px;
