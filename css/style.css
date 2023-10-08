@@ -710,14 +710,15 @@ padding-top: 8px;
 ul.breadcrumb li a:hover {
 	text-decoration:none;
 }
+
 .post3 {
 	text-align: center;
 }
 
 .post3 img {
-margin-bottom: 20px;
-max-width: 100%;
+	max-width: 100%;
 }
+
 .post3 a:hover * {
 color: #f99947;
 }
