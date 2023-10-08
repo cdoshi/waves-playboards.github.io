@@ -1553,11 +1553,11 @@ article img.pull-right, article .align-right{
 .media {
   margin-top: 15px;
 }
+
 .features .media.service-box img{
-background: #ECECEC;
-padding: 10px;
-width: 89%;
+	background: #ECECEC;
 }
+
 .features .media.service-box .pull-left > i {
   color: #81c402;
   /* border: 4px solid #fff; */
