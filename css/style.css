@@ -24,6 +24,16 @@ body {
 	color:#656565;
 }
 
+#placeholder-image {
+	height: 500px;
+	width: 100%;
+}
+
+#main-slider {
+	height: 500px;
+	background-color: grey;
+}
+
 .carousel-image {
 	height: 500px;
 	background-position: center;
@@ -78,6 +88,16 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+	#main-slider {
+		height: 300px;
+		background-color: grey;
+	}
+
+	#placeholder-image {
+		height: 300px;
+		width: 100%;
+	}
+
 	.carousel-image {
 		height: 300px;
 	}
