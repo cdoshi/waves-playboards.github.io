@@ -65,8 +65,7 @@ body {
 
 .testimonial-style {
 	border-radius: 10px;
-	height: auto;
-	width: 400px;
+	margin-bottom: 20px;
 }
 
 .size-image {
