@@ -72,6 +72,11 @@
 	<section id="banner">
 	<!-- Slider -->
         <div id="main-slider" class="flexslider">
+            <div
+                class="carousel-image"
+                id="placeholder-image"
+                style="height: 300px;position: absolute;width: 100%;z-index: 200;background-image:url('https://res.cloudinary.com/orkni/image/upload/q_10/v1696708221/waves_website/slide-1.jpg'); background-position: top;">
+            </div>
             <ul class="slides">
                 <li>
                     <div
@@ -686,6 +691,9 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-ZTCKJCGWY4');
+    window.onload = function() {
+        document.getElementById('placeholder-image').style.display = 'none';
+    }
 </script>
 </body>
 </html>
