@@ -189,6 +189,7 @@ bottom: -40px;
 z-index: 99999999;
 padding: 30px 15px;
 }
+
 a.navbar-brand:before {
     content: '';
     z-index: 99;
@@ -200,9 +201,6 @@ a.navbar-brand:before {
     border-top: 42px solid #81c402;
     left: 0;
     bottom: -42px;
-}
-.flex-control-nav{
-	display:none;
 }
 
 header .navbar-collapse  ul.navbar-nav {
