@@ -1740,6 +1740,7 @@ article img.pull-right, article .align-right{
 
 .logo {
 	width: 153px;
+	height: 77px;
 }
 
 .order-btn-sm {
@@ -1763,6 +1764,7 @@ article img.pull-right, article .align-right{
 	}
 	.logo {
 		width: 100px;
+		height: auto;
 	}
 	a.navbar-brand:before {
     content: '';
