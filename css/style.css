@@ -190,6 +190,13 @@ z-index: 99999999;
 padding: 30px 15px;
 }
 
+.media-heading {
+	font-family:'CustomFontBold', 'Open Sans', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #333;
+}
+
 a.navbar-brand:before {
     content: '';
     z-index: 99;
