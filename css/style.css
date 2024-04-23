@@ -1441,12 +1441,12 @@ ul.social-network li {
   
 
 /* scroll to top */
-.scrollup{
+.scrollup {
     position:fixed;
 		width:32px;
 		height:32px;
     bottom:0px;
-    right:20px;
+    right:35px;
     background: #f89847;
 }
 
@@ -1702,6 +1702,19 @@ article img.pull-right, article .align-right{
   transition: border linear 0.2s,box-shadow linear 0.2s;
 }
 
+.order-btn-circular {
+	border-radius: 50%;
+	background-color: #2A652A;
+	position: fixed;
+	bottom: 40px;
+	height: 65px;
+	width: 65px;
+	right: 20px;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /*  Media queries 
 ============================= */
@@ -1743,22 +1756,14 @@ article img.pull-right, article .align-right{
 	height: 77px;
 }
 
-.order-btn-sm {
-	display: none;
-}
-
-.order-btn-lg {
-	display: block;
-}
-
 @media (max-width: 767px) {
-	.order-btn-sm {
-		margin-top: 7px;
-		display: block;
+
+	.order-btn-circular {
+		height: 50px;
+		width: 50px;
+		right: 25px;
 	}
-	.order-btn-lg {
-		display: none;
-	}
+
 	.navbar-default .navbar-brand {
 		height: 80px;
 	}
@@ -1783,8 +1788,8 @@ article img.pull-right, article .align-right{
   background: #f99947;
 }
 .navbar-default .navbar-toggle .icon-bar {
-background-color: #FFF;
-border-radius: 0;
+	background-color: #FFF;
+	border-radius: 0;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
   color: #FFFFFF;
@@ -1794,8 +1799,8 @@ border-radius: 0;
   background-color: #40250B;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-border-color: rgba(255, 255, 255, 0.58);
-margin-top: 15px;
+	border-color: rgba(255, 255, 255, 0.58);
+	margin-top: 15px;
 }
 .navbar-toggle { 
   background-color: rgb(245, 138, 46);
