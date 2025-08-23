@@ -1448,6 +1448,7 @@ ul.social-network li {
     bottom:0px;
     right:35px;
     background: #f89847;
+		border: 0.5px solid black;
 }
 
 a.scrollup {
@@ -1702,20 +1703,6 @@ article img.pull-right, article .align-right{
   transition: border linear 0.2s,box-shadow linear 0.2s;
 }
 
-.order-btn-circular {
-	border-radius: 50%;
-	background-color: #2A652A;
-	position: fixed;
-	bottom: 40px;
-	height: 65px;
-	width: 65px;
-	right: 20px;
-	z-index: 10;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 /*  Media queries 
 ============================= */
 
@@ -1757,12 +1744,6 @@ article img.pull-right, article .align-right{
 }
 
 @media (max-width: 767px) {
-
-	.order-btn-circular {
-		height: 50px;
-		width: 50px;
-		right: 25px;
-	}
 
 	.navbar-default .navbar-brand {
 		height: 80px;
@@ -1979,4 +1960,15 @@ li.active {
 		width: 200px;
 		margin: 20px;
 	}
+}
+
+.order-btn {
+	font-family: 'CustomFontBold';
+	color: #fff !important;
+	background-color: #2A652A !important;
+	text-decoration: none;
+}
+
+.order-btn:hover {
+	background-color: #47a447 !important;
 }
